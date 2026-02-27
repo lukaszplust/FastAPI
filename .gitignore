@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Baza danych (nie chce wysyłać logów na GitHub)
+*.db
+# Systemowe (Mac)
+.DS_Store
+# Docker
+.docker/
