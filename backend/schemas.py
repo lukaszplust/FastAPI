@@ -23,3 +23,11 @@ class AnalysisOutput(BaseModel):
     confidence_score: float
     detected_language: str
     processed_at: datetime
+
+class UserAuth(BaseModel):
+    login: str = Field(..., min_length=3, max_length=50)
+    password: str = Field(..., min_length=6)
+
+class UserResponse(BaseModel):
+    id: int
+    login: str

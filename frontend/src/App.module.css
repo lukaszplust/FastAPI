@@ -1,0 +1,148 @@
+.appContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    color: #ececec;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 260px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .newChatBtn {
+    background-color: #212121;
+    border: 1px solid #4d4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.2s;
+  }
+  
+  .newChatBtn:hover {
+    background-color: #2f2f2f;
+  }
+  
+  .recentLabel {
+    color: #666;
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  .chatItem {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+  
+  .activeChatItem {
+    background-color: #2f2f2f;
+  }
+  
+  .mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .signInBtn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .logoutBtn {
+    background: none;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 4px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .messagesContainer {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .welcomeScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .inputWrapper {
+    padding: 10px 20px 30px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inputBar {
+    width: 100%;
+    max-width: 720px;
+    background-color: #2f2f2f;
+    border-radius: 24px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #424242;
+  }
+  
+  .chatInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 12px;
+  }
+  
+  .sendBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* idealne kółko */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    margin-left: 8px;
+  }
+  
+  .sendBtn:hover:not(:disabled) {
+    transform: scale(1.1); /* delikatne powiększenie przy najechaniu */
+    filter: brightness(1.2);
+  }

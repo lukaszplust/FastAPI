@@ -5,9 +5,21 @@ __pycache__/
 .venv/
 venv/
 
+# zmienne środowiskowe
+.env
+.env.local
+.env.development
+.env.production
+
 # Baza danych (nie chce wysyłać logów na GitHub)
 *.db
 # Systemowe (Mac)
 .DS_Store
 # Docker
 .docker/
+
+# folder frontendu (nie wysyłaj tysięcy plików bibliotek)
+node_modules/
+dist/
+build/
+.eslintcache
